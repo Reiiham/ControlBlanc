@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2001;" xmlns:fx="http://javafx.com/fxml" fx:controller="ma.ensa.controlblanc.AjoutController">
+   <children>
+      <Label layoutX="41.0" layoutY="31.0" text="Ajout un membre">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="118.0" layoutY="93.0" promptText="Nom" />
+      <TextField fx:id="phone" layoutX="118.0" layoutY="217.0" promptText="Phone" />
+      <TextField fx:id="prenom" layoutX="118.0" layoutY="134.0" promptText="Prenom" />
+      <TextField fx:id="email" layoutX="118.0" layoutY="175.0" promptText="email" />
+      <Button fx:id="boutton" layoutX="321.0" layoutY="296.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="25.0" prefWidth="92.0" text="Inserer" />
+   </children>
+</AnchorPane>
