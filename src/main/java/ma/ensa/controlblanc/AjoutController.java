@@ -46,8 +46,8 @@ public class AjoutController {
         }
 
         // Création de l'objet membre
-        int identifiant = IdentifierGenerator.generateRandomIdentifier();
-        Membre membre = new Membre(identifiant, nomValue, prenomValue, emailValue, phoneValue, null);
+        String identifiant = IdentifierGenerator.generateRandomIdentifier();
+        Membre membre = new Membre(identifiant, nomValue, prenomValue, emailValue, phoneValue,null);
 
         // Insertion dans la base de données
         try (Connection connection = DataBase.getConnection()) {

@@ -11,12 +11,13 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Membre {
-    private int identifiant;
+    private String identifiant;
     private String nom;
     private String prenom;
     private String email;
     private String phone;
     private Set<Incident> incident;
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -27,6 +28,6 @@ public class Membre {
 
     @Override
     public int hashCode() {
-        return Integer.hashCode(identifiant);
+        return identifiant.hashCode();
     }
 }
